@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumière Dental Studio | Premium Dental Care in Gurugram (Demo)</title>
+  <meta name="description" content="Lumière Dental Studio is a demo dental clinic website for Gurugram, Haryana: comfortable, personalised dental care, online appointment requests and WhatsApp enquiries.">
+  <!-- REPLACE: canonical URL once the real domain is known -->
+  <link rel="canonical" href="https://www.example.com/">
+  <meta name="theme-color" content="#123C3A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lumière Dental Studio | A healthier smile. A more confident you.">
+  <meta property="og:description" content="Demo website for a premium dental clinic in Gurugram. Request an appointment or chat on WhatsApp.">
+  <meta property="og:url" content="https://www.example.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=70">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- DEMO structured data. No ratings, reviews or credentials are included on purpose. REPLACE all values. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Lumière Dental Studio (Demo)",
+    "description": "Demo dental clinic website. Replace with real clinic details.",
+    "url": "https://www.example.com/",
+    "telephone": "+919876543210",
+    "email": "hello@lumieredental.example",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Demo Address, Sector 00",
+      "addressLocality": "Gurugram",
+      "addressRegion": "Haryana",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "10:00",
+      "closes": "19:00"
+    }],
+    "priceRange": "₹₹"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== A. Announcement bar + navbar ===== -->
+  <div class="announce" role="note">
+    <p><i data-lucide="sparkles" aria-hidden="true"></i> Now welcoming new patients — request a consultation today. <span class="demo-tag">Demo clinic</span></p>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Lumière Dental Studio home">
+        <svg class="brand-icon" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 5c-2.2-1.6-5.4-2-7.8-.4C5.6 6.3 5.3 10 6.6 13.2c.9 2.2 1.1 4.3 1.4 6.9.3 2.7.9 7.4 3.1 7.4 2 0 2-5.2 4.9-5.2s2.9 5.2 4.9 5.2c2.2 0 2.8-4.700 3.100-7.400.3-2.6.5-4.700 1.400-6.900 1.300-3.200 1-6.900-1.600-8.600C21.400 3 18.200 3.400 16 5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        <span class="brand-text"><strong>LUMIÈRE</strong><small>Dental Studio</small></span>
+      </a>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#home" data-nav>Home</a></li>
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#treatments" data-nav>Treatments</a></li>
+        <li><a href="#team" data-nav>Our Team</a></li>
+        <li><a href="#reviews" data-nav>Reviews</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+        <li class="nav-drawer-actions">
+          <a class="btn btn-whatsapp" href="#" data-wa="general"><i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp</a>
+          <a class="btn btn-primary" href="#book">Book Appointment</a>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="icon-btn wa-nav" href="#" data-wa="general" aria-label="Chat on WhatsApp"><i data-lucide="message-circle" aria-hidden="true"></i></a>
+        <a class="btn btn-primary nav-cta" href="#book">Book Appointment</a>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div class="nav-scrim" id="nav-scrim" hidden></div>
+
+  <main id="main">
+    <!-- ===== B. Hero ===== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Gurugram · Modern dental studio</p>
+          <h1 id="hero-title">Your Smile Deserves <em>Exceptional</em> Care.</h1>
+          <p class="lead">Comfortable, personalised dental treatment in a calm, modern studio. We take time to listen, explain every option clearly, and plan care around you.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#book">Book an Appointment <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+            <a class="btn btn-ghost btn-lg" href="#treatments">Explore Our Treatments</a>
+          </div>
+          <a class="text-link" href="#" data-wa="general"><i data-lucide="message-circle" aria-hidden="true"></i> Prefer to chat? Message us on WhatsApp</a>
+
+          <ul class="trust-row" aria-label="Clinic highlights (demo content)">
+            <li><strong>Gentle</strong><span>patient-first approach</span></li>
+            <li><strong>Digital</strong><span>modern diagnostics</span></li>
+            <li><strong>Clear</strong><span>written treatment plans</span></li>
+          </ul>
+          <p class="fineprint">Highlights above are demo copy, not verified statistics.</p>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-blob" aria-hidden="true"></div>
+          <figure class="hero-photo">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=75" alt="Dentist speaking with a patient in a bright, modern dental clinic" width="1000" height="1200" fetchpriority="high">
+          </figure>
+          <aside class="float-card hours-card" aria-label="Clinic hours">
+            <div class="float-icon"><i data-lucide="clock" aria-hidden="true"></i></div>
+            <div>
+              <strong>Open Mon – Sat</strong>
+              <span>10:00 AM – 7:00 PM</span>
+              <small>Demo hours</small>
+            </div>
+          </aside>
+          <aside class="float-card appt-card" aria-label="Quick appointment">
+            <span class="eyebrow sm">Next step</span>
+            <strong>Request your consultation</strong>
+            <a class="btn btn-primary btn-sm" href="#book">Choose a time</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== C. Benefits ===== -->
+    <section class="section benefits" aria-labelledby="benefits-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Why patients choose us</p>
+          <h2 id="benefits-title">Care that feels as good as it looks</h2>
+        </header>
+        <div class="benefit-grid">
+          <article class="benefit reveal"><i data-lucide="heart-handshake" aria-hidden="true"></i><h3>Comfortable, patient-first</h3><p>Unhurried appointments, gentle techniques and a team that checks in with you throughout.</p></article>
+          <article class="benefit reveal"><i data-lucide="scan-line" aria-hidden="true"></i><h3>Modern dental technology</h3><p>Digital imaging and up-to-date equipment help your dentist plan precisely and explain clearly.</p></article>
+          <article class="benefit reveal"><i data-lucide="file-text" aria-hidden="true"></i><h3>Transparent treatment plans</h3><p>You receive options and estimated costs before treatment begins, so there are no surprises.</p></article>
+          <article class="benefit reveal"><i data-lucide="user-round-check" aria-hidden="true"></i><h3>Personalised care</h3><p>Every plan reflects your goals, schedule and comfort, whether you are 6 or 66.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== D. Services ===== -->
+    <section class="section services" id="treatments" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head split reveal">
+          <div>
+            <p class="eyebrow">Treatments</p>
+            <h2 id="services-title">Complete dental care, under one roof</h2>
+          </div>
+          <p class="muted">From routine check-ups to smile makeovers. Treatment suitability is always decided by a qualified dentist after examination.</p>
+        </header>
+        <div class="service-grid" id="service-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ===== E. About ===== -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img class="about-img-main" src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=900&q=75" alt="Reception and treatment area of a modern dental clinic" width="900" height="1100" loading="lazy">
+          <img class="about-img-small" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=75" alt="Dental treatment chair and equipment in a clean clinic room" width="600" height="600" loading="lazy">
+          <span class="stock-note">Stock photography for demo</span>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">About the clinic</p>
+          <h2 id="about-title">A calmer way to look after your teeth</h2>
+          <p class="lead">Our mission is simple: make dental care understandable, comfortable and respectful of your time.</p>
+          <ul class="check-list">
+            <li><i data-lucide="check" aria-hidden="true"></i><span><strong>Listen first.</strong> We begin with your concerns and goals, not a script.</span></li>
+            <li><i data-lucide="check" aria-hidden="true"></i><span><strong>Explain clearly.</strong> Plain-language options so you can decide with confidence.</span></li>
+            <li><i data-lucide="check" aria-hidden="true"></i><span><strong>Clean, careful environment.</strong> Instruments are processed following the clinic's infection-control protocols.</span></li>
+            <li><i data-lucide="check" aria-hidden="true"></i><span><strong>Up-to-date equipment.</strong> Digital tools that support accurate diagnosis and planning.</span></li>
+          </ul>
+          <a class="btn btn-dark" href="#team">Meet the Dentist <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== F. Dentist ===== -->
+    <section class="section team" id="team" aria-labelledby="team-title">
+      <div class="container team-grid">
+        <figure class="portrait reveal">
+          <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=800&q=75" alt="Portrait of a dentist in a clinic (stock photo representing a placeholder profile)" width="800" height="1000" loading="lazy">
+          <figcaption>Stock photo · placeholder</figcaption>
+        </figure>
+        <div class="team-copy reveal">
+          <p class="eyebrow">Our team</p>
+          <h2 id="team-title">Meet your dentist</h2>
+          <div class="profile-card">
+            <h3>Dr. Aarav Mehta <span class="demo-tag">Placeholder</span></h3>
+            <p class="role">Lead Dentist &amp; Clinic Director</p>
+            <dl class="facts">
+              <div><dt>Qualifications</dt><dd>BDS, MDS (placeholder)</dd></div>
+              <div><dt>Experience</dt><dd>00+ years (placeholder)</dd></div>
+              <div><dt>Interests</dt><dd>Restorative &amp; cosmetic dentistry, preventive care, gentle care for anxious patients</dd></div>
+            </dl>
+            <p>Dr. Mehta believes the best dentistry starts with a good conversation. This sample biography shows how a real dentist's story, training and approach would appear here.</p>
+            <p class="fineprint">Name, credentials and experience are placeholders. Replace with verified details, including registration number, before publishing.</p>
+            <a class="btn btn-primary" href="#book" data-prefill-note="Consultation with the lead dentist">Schedule a Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== G. How it works ===== -->
+    <section class="section how" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head center reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Four simple steps to your visit</h2>
+        </header>
+        <ol class="steps">
+          <li class="reveal"><span class="step-num">1</span><h3>Choose your treatment</h3><p>Pick the service you are interested in, or select a general consultation.</p></li>
+          <li class="reveal"><span class="step-num">2</span><h3>Request an appointment</h3><p>Share your preferred date and time using the form or WhatsApp.</p></li>
+          <li class="reveal"><span class="step-num">3</span><h3>Receive confirmation</h3><p>The clinic reviews your request and confirms a slot with you directly.</p></li>
+          <li class="reveal"><span class="step-num">4</span><h3>Visit for your consultation</h3><p>Meet your dentist, discuss your options and plan next steps.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== H. Booking ===== -->
+    <section class="section booking" id="book" aria-labelledby="book-title">
+      <div class="container booking-grid">
+        <div class="booking-intro reveal">
+          <p class="eyebrow light">Appointments</p>
+          <h2 id="book-title">Request your appointment</h2>
+          <p>Tell us what you need and when suits you. Our team will contact you to confirm.</p>
+          <ul class="mini-list">
+            <li><i data-lucide="shield-check" aria-hidden="true"></i> A request is <strong>not</strong> a confirmed appointment until the clinic confirms it.</li>
+            <li><i data-lucide="message-circle" aria-hidden="true"></i> Use WhatsApp to send your details straight to the clinic.</li>
+            <li><i data-lucide="siren" aria-hidden="true"></i> Dental emergency? Call <a href="#" data-phone>+91 98765 43210</a> instead of using this form.</li>
+          </ul>
+          <div class="demo-box">
+            <strong>Demo notice</strong>
+            <p>This is a frontend-only demo. Requests are stored only in <em>this browser</em> (localStorage). They are <strong>not</strong> visible to clinic staff unless you send them via WhatsApp, or a backend is connected (see <code>BookingAPI</code> in script.js).</p>
+          </div>
+          <details class="history" id="history">
+            <summary>My demo requests in this browser <span id="history-count" class="count">0</span></summary>
+            <ul id="history-list" class="history-list"></ul>
+            <button type="button" class="text-btn" id="history-clear">Clear saved requests</button>
+          </details>
+        </div>
+
+        <div class="booking-card reveal">
+          <form id="booking-form" novalidate>
+            <div class="form-grid">
+              <div class="field full">
+                <label for="b-name">Full name <span aria-hidden="true">*</span></label>
+                <input id="b-name" name="name" type="text" autocomplete="name" required aria-describedby="b-name-err">
+                <p class="err" id="b-name-err" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="b-phone">Mobile number <span aria-hidden="true">*</span></label>
+                <div class="phone-input">
+                  <span class="prefix" aria-hidden="true">+91</span>
+                  <input id="b-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="98765 43210" maxlength="14" required aria-describedby="b-phone-err">
+                </div>
+                <p class="err" id="b-phone-err" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="b-email">Email <small>(optional)</small></label>
+                <input id="b-email" name="email" type="email" autocomplete="email" aria-describedby="b-email-err">
+                <p class="err" id="b-email-err" role="alert"></p>
+              </div>
+              <div class="field full">
+                <label for="b-service">Treatment <span aria-hidden="true">*</span></label>
+                <select id="b-service" name="service" required aria-describedby="b-service-err"></select>
+                <p class="err" id="b-service-err" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="b-date">Preferred date <span aria-hidden="true">*</span></label>
+                <input id="b-date" name="date" type="date" required aria-describedby="b-date-err b-date-hint">
+                <p class="hint" id="b-date-hint">Closed Sundays (demo hours).</p>
+                <p class="err" id="b-date-err" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="b-time">Preferred time <span aria-hidden="true">*</span></label>
+                <select id="b-time" name="time" required aria-describedby="b-time-err"></select>
+                <p class="err" id="b-time-err" role="alert"></p>
+              </div>
+              <fieldset class="field full radio-group">
+                <legend>Are you a new or existing patient? <span aria-hidden="true">*</span></legend>
+                <label class="radio"><input type="radio" name="patientType" value="New patient" checked><span>New patient</span></label>
+                <label class="radio"><input type="radio" name="patientType" value="Existing patient"><span>Existing patient</span></label>
+              </fieldset>
+              <div class="field full">
+                <label for="b-notes">Notes <small>(optional — avoid sensitive medical details)</small></label>
+                <textarea id="b-notes" name="notes" rows="3" maxlength="300"></textarea>
+              </div>
+              <div class="field full consent">
+                <label class="check">
+                  <input type="checkbox" id="b-consent" name="consent" required aria-describedby="b-consent-err">
+                  <span>I agree to the clinic using these details to contact me about this request, as described in the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. <span aria-hidden="true">*</span></span>
+                </label>
+                <p class="err" id="b-consent-err" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg" id="b-submit"><span class="btn-label">Request Appointment</span><span class="spinner" aria-hidden="true"></span></button>
+              <button type="button" class="btn btn-whatsapp btn-lg" id="b-wa"><i data-lucide="message-circle" aria-hidden="true"></i> Send via WhatsApp</button>
+            </div>
+            <p class="fineprint">Choosing WhatsApp opens the app or WhatsApp Web with a pre-filled message. You must press Send yourself; nothing is delivered automatically.</p>
+          </form>
+
+          <div class="success" id="b-success" hidden tabindex="-1" aria-live="polite">
+            <div class="success-icon"><i data-lucide="check" aria-hidden="true"></i></div>
+            <h3>Request saved in this demo</h3>
+            <p class="ref">Reference <strong id="s-ref">—</strong></p>
+            <dl class="summary" id="s-summary"></dl>
+            <div class="notice"><strong>Not yet confirmed.</strong> This request has been saved only in your browser. It has not reached clinic staff. Send it via WhatsApp so the clinic can review and confirm your slot.</div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-whatsapp" id="s-wa"><i data-lucide="message-circle" aria-hidden="true"></i> Send details on WhatsApp</button>
+              <button type="button" class="btn btn-ghost-dark" id="s-copy"><i data-lucide="copy" aria-hidden="true"></i> Copy details</button>
+              <button type="button" class="text-btn" id="s-new">Make another request</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== J. Gallery ===== -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-head split reveal">
+          <div>
+            <p class="eyebrow">Smile gallery</p>
+            <h2 id="gallery-title">Illustrative before &amp; after</h2>
+          </div>
+          <p class="muted"><strong>Demonstration content only.</strong> These images are stock or illustrative edits. They are not real patients and do not show verified clinic results.</p>
+        </header>
+        <div class="filters" role="group" aria-label="Filter gallery" id="gallery-filters"></div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ===== K. Testimonials ===== -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-head split reveal">
+          <div>
+            <p class="eyebrow">Patient stories</p>
+            <h2 id="reviews-title">What patients might say</h2>
+          </div>
+          <p class="muted"><strong>Sample testimonials</strong> written for this demo. They are not real reviews and are not verified by Google or any platform.</p>
+        </header>
+        <div class="carousel reveal" id="carousel" aria-roledescription="carousel" aria-label="Sample testimonials">
+          <div class="carousel-viewport" id="carousel-viewport">
+            <div class="carousel-track" id="carousel-track"></div>
+          </div>
+          <div class="carousel-controls">
+            <button class="icon-btn dark" id="car-prev" aria-label="Previous testimonial"><i data-lucide="arrow-left" aria-hidden="true"></i></button>
+            <div class="dots" id="car-dots" role="tablist" aria-label="Choose testimonial"></div>
+            <button class="icon-btn dark" id="car-next" aria-label="Next testimonial"><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== L. FAQ ===== -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <header class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Good questions, clear answers</h2>
+          <p class="muted">Can't find what you need? <a href="#" data-wa="general">Ask us on WhatsApp</a>.</p>
+        </header>
+        <div class="accordion reveal" id="accordion"></div>
+      </div>
+    </section>
+
+    <!-- ===== M. Contact ===== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Visit or get in touch</h2>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <ul class="info-list">
+              <li><i data-lucide="map-pin" aria-hidden="true"></i><div><strong>Address</strong><span id="c-address">Demo Address, Sector 00, Gurugram, Haryana, India</span></div></li>
+              <li><i data-lucide="phone" aria-hidden="true"></i><div><strong>Phone</strong><a href="#" data-phone>+91 98765 43210</a></div></li>
+              <li><i data-lucide="mail" aria-hidden="true"></i><div><strong>Email</strong><a href="mailto:hello@lumieredental.example">hello@lumieredental.example</a></div></li>
+              <li><i data-lucide="clock" aria-hidden="true"></i><div><strong>Hours (demo)</strong><span>Mon – Sat: 10:00 AM – 7:00 PM<br>Sunday: Closed</span></div></li>
+              <li><i data-lucide="siren" aria-hidden="true"></i><div><strong>Urgent dental concern?</strong><span>Please call the clinic directly rather than using forms.</span></div></li>
+            </ul>
+            <div class="contact-btns">
+              <a class="btn btn-whatsapp" href="#" data-wa="general"><i data-lucide="message-circle" aria-hidden="true"></i> Chat on WhatsApp</a>
+              <a class="btn btn-ghost-dark" id="directions" href="#" target="_blank" rel="noopener"><i data-lucide="navigation" aria-hidden="true"></i> Get Directions</a>
+            </div>
+            <div class="map-wrap">
+              <iframe id="map" title="Map showing the clinic location (demo address)" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="300"></iframe>
+            </div>
+            <p class="fineprint">Map location is configurable in script.js (<code>CONFIG.mapQuery</code>).</p>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <h3>Send us a message</h3>
+            <div class="field"><label for="c-name">Name *</label><input id="c-name" type="text" autocomplete="name" required><p class="err" id="c-name-err" role="alert"></p></div>
+            <div class="form-grid">
+              <div class="field"><label for="c-email">Email *</label><input id="c-email" type="email" autocomplete="email" required><p class="err" id="c-email-err" role="alert"></p></div>
+              <div class="field"><label for="c-phone">Mobile *</label><input id="c-phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="98765 43210" required><p class="err" id="c-phone-err" role="alert"></p></div>
+            </div>
+            <div class="field"><label for="c-subject">Subject *</label><input id="c-subject" type="text" required><p class="err" id="c-subject-err" role="alert"></p></div>
+            <div class="field"><label for="c-message">Message *</label><textarea id="c-message" rows="4" maxlength="500" required></textarea><p class="err" id="c-message-err" role="alert"></p></div>
+            <button type="submit" class="btn btn-whatsapp btn-lg"><i data-lucide="message-circle" aria-hidden="true"></i> Send via WhatsApp</button>
+            <p class="fineprint">This demo has no backend, so messages are <strong>not</strong> delivered to an email inbox. Sending opens WhatsApp with your message pre-filled; you must press Send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== N. Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="f-brand">
+        <a class="brand light" href="#home" aria-label="Back to top">
+          <svg class="brand-icon" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 5c-2.2-1.6-5.4-2-7.8-.4C5.6 6.3 5.3 10 6.6 13.2c.9 2.2 1.1 4.3 1.4 6.9.3 2.7.9 7.4 3.1 7.4 2 0 2-5.2 4.9-5.2s2.9 5.2 4.9 5.2c2.2 0 2.8-4.700 3.100-7.400.3-2.6.5-4.700 1.400-6.900 1.300-3.200 1-6.900-1.600-8.600C21.400 3 18.200 3.400 16 5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <span class="brand-text"><strong>LUMIÈRE</strong><small>Dental Studio</small></span>
+        </a>
+        <p>A healthier smile. A more confident you.</p>
+        <p class="fineprint light">Demo website. All clinic details are placeholders.</p>
+        <a class="btn btn-whatsapp btn-sm" href="#" data-wa="general"><i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp us</a>
+      </div>
+      <nav aria-label="Quick links"><h3>Quick links</h3>
+        <ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#team">Our Team</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul>
+      </nav>
+      <nav aria-label="Treatments"><h3>Treatments</h3><ul id="footer-services"></ul></nav>
+      <div><h3>Visit us</h3>
+        <ul class="f-contact">
+          <li>Demo Address, Sector 00,<br>Gurugram, Haryana</li>
+          <li><a href="#" data-phone>+91 98765 43210</a></li>
+          <li><a href="mailto:hello@lumieredental.example">hello@lumieredental.example</a></li>
+          <li>Mon – Sat: 10 AM – 7 PM<br>Sun: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Lumière Dental Studio (demo). All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms</a></p>
+    </div>
+  </footer>
+
+  <!-- Floating controls -->
+  <a class="wa-float" href="#" data-wa="general" aria-label="Chat with us on WhatsApp"><i data-lucide="message-circle" aria-hidden="true"></i><span>WhatsApp</span></a>
+  <button class="to-top" id="to-top" aria-label="Back to top" hidden><i data-lucide="arrow-up" aria-hidden="true"></i></button>
+
+  <!-- Service modal -->
+  <div class="modal" id="service-modal" role="dialog" aria-modal="true" aria-labelledby="sm-title" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" data-close aria-label="Close dialog"><i data-lucide="x" aria-hidden="true"></i></button>
+      <img id="sm-img" alt="" width="800" height="400">
+      <div class="modal-body">
+        <p class="eyebrow" id="sm-kicker">Treatment</p>
+        <h3 id="sm-title"></h3>
+        <p id="sm-desc"></p>
+        <h4>What to expect</h4>
+        <ul class="bullets" id="sm-points"></ul>
+        <p class="fineprint"><strong>Disclaimer:</strong> This is general information, not medical advice. Whether a treatment is suitable for you can only be decided by a qualified dentist after examination. Costs and duration vary.</p>
+        <div class="modal-actions">
+          <button class="btn btn-primary" id="sm-book">Book this treatment</button>
+          <button class="btn btn-whatsapp" id="sm-wa"><i data-lucide="message-circle" aria-hidden="true"></i> Ask on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Gallery viewer" hidden>
+    <div class="modal-backdrop dark" data-close></div>
+    <button class="lb-btn lb-close" data-close aria-label="Close gallery viewer"><i data-lucide="x" aria-hidden="true"></i></button>
+    <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous image"><i data-lucide="arrow-left" aria-hidden="true"></i></button>
+    <button class="lb-btn lb-next" id="lb-next" aria-label="Next image"><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+    <figure class="lb-figure">
+      <div class="ba" id="lb-ba"></div>
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+  </div>
+
+  <div class="toast-region" id="toasts" role="status" aria-live="polite"></div>
+
+  <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
